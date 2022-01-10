@@ -1,0 +1,14 @@
+GET http://localhost:10001/items
+
+###
+
+POST http://localhost:10001/items HTTP/1.1
+content-type: application/json
+
+{"name": "Pasta"}
+
+###
+DELETE http://localhost:10001/items/61a94d3eea8d8e000836915b HTTP/1.1
+
+###
+GET http://localhost:10001/items?name=Pasta

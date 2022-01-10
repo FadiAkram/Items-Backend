@@ -1,0 +1,43 @@
+GET http://localhost:10001/items HTTP/1.1
+
+###
+
+GET http://localhost:10001/orders HTTP/1.1
+
+###
+POST http://localhost:10001/orders HTTP/1.1
+content-type: application/json
+
+{
+  "preferences": "Rice",
+  "restrictions": "Peanut Allergy",
+  "items": [
+    {
+      "_id": "61ad585936ad640008e12d01",
+      "name": "clown"
+    },
+    {
+      "_id": "61ad585936ad640008e12d00",
+      "name": "Rice"
+    }
+  ],
+  "email": "email@example.com"
+}
+
+###
+
+GET http://localhost:10001/orders?email=email%40example.com HTTP/1.1
+
+###
+
+POST http://localhost:10001/orders/61ae8be825701100076811c1/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "soup",
+  "_id": "61ae8baf25701100076811bf"
+}
+
+###
+
+GET http://localhost:10001/orders HTTP/1.1
