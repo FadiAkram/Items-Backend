@@ -1,1 +1,1 @@
-# Items-Backend
+Items Backend was a project given to students in the course CS-343 Software Construction, Design and Architecture at Worcester State University. The purpose of this project is to  an example of how to build a REST API server using OpenAPI, ExpressJS + NodeJS, and Chai + Mocha, Docker + Docker Compose, and GitLab + CI. I have extended the project to add Orders by adding adding new orders endpoints, orders schemas, as well as adding new functions in orders.js that were needed. I also tested the new endpoints with a series of REST calls 
